@@ -35,8 +35,19 @@ footer{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font
 <p>Information is used to run the chess game, remember supported preferences and progress, provide features that you choose to use, maintain app integrity, troubleshoot errors, and improve reliability. Any information sent to Google services is handled under the terms and privacy disclosures of those services.</p>
 <h2>4. Sharing and service providers</h2>
 <p>We do not sell personal information. The project includes Firebase AI and Firebase App Check dependencies. If the released App uses these services, relevant inputs and technical information may be processed by Google as a service provider to deliver those functions. The code reviewed does not establish that all such services are actively called in the released version. This policy must be updated if additional SDKs, analytics, advertising, multiplayer servers, or other providers are added.</p>
-<h2>5. Ads and analytics</h2>
-<p>No advertising SDK or analytics SDK was identified in the app module dependencies reviewed for this draft. If advertising or analytics is added to a release, this section and the Google Play Data safety declaration must be updated before release.</p>
+<h2>5. Advertising — planned Google AdMob integration</h2>
+<p>Grandmaster Arena plans to display ads using Google AdMob (Google Mobile Ads SDK). The app module reviewed for this policy did not yet include the AdMob SDK, so ads are not confirmed to be active in the current build. This section describes the planned processing once AdMob is integrated and enabled in a release.</p>
+<p>When AdMob is active, Google Mobile Ads SDK may automatically collect and share information such as:</p>
+<ul>
+<li><strong>IP address</strong>, which may be used to estimate a device's general location;</li>
+<li><strong>Device and advertising identifiers</strong>, such as Android Advertising ID and app-set or other supported identifiers;</li>
+<li><strong>Ad and app interactions</strong>, such as ad impressions, views, taps, and app interaction events;</li>
+<li><strong>Diagnostics and performance information</strong>, such as crash reports, app launch time, hang rate, and energy usage.</li>
+</ul>
+<p>Google may use this information for ad delivery, measurement, analytics, fraud prevention, and improving its advertising services. The information may be shared with Google and its advertising partners as described in Google's documentation. Google states that information collected by the Mobile Ads SDK is encrypted in transit using TLS.</p>
+<p>Google's handling of information is also governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>. See Google's current <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Play data disclosure for the Mobile Ads SDK</a> for details.</p>
+<p>Where required by law or Google policy, we will use the appropriate consent and privacy-choice tools before requesting or serving personalized ads. Ad personalization and advertising identifier controls may also be available in Android settings. The exact data collected depends on the SDK version, settings, region, and any mediation or optional features enabled.</p>
+<p><strong>Before release:</strong> after AdMob is integrated, we will re-check the actual SDK version and configuration, update this policy if needed, and complete the Google Play Data safety form to match the shipped app. This policy alone does not complete that form.</p>
 <h2>6. Storage, security, and retention</h2>
 <p>Game and preference information that remains on your device is retained until it is cleared by you, removed through Android app-data controls, or the App is uninstalled, subject to Android backup settings. Information processed by a third-party service is subject to that provider's retention practices. We use the security measures available through Android and the services integrated into the App, but no method of storage or transmission is completely secure.</p>
 <h2>7. Children's privacy</h2>
